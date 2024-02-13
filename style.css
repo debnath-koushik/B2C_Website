@@ -1,0 +1,631 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+
+nav {
+    min-width: 100%;
+    height: 72px;
+    background: #fada50;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 12px;
+    font-weight: bold;
+    color: #6b7f31;
+}
+
+/* hero section */
+.hero,
+.about,
+.whyme,
+.countdown {
+    min-width: 100%;
+    height: 100vh;
+    background: #6b7f31;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.hero .leftChild {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 8rem;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    color: #fff;
+}
+
+.leftChild p {
+    font-size: 1.3rem;
+    color: #e4dcdc;
+}
+
+.box {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxChild {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#btn1 {
+    background: #fada50;
+    width: 100%;
+    height: 72px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6b7f31;
+}
+
+#strike {
+    text-decoration: line-through;
+}
+
+.hero p:last-child {
+    text-align: center;
+}
+
+.hero p:last-child a {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero .rightChild {
+    width: 30%;
+    height: 100%;
+}
+
+.hero .rightChild .img {
+    filter: drop-shadow(5px 5px 5px rgb(58, 56, 56));
+    position: relative;
+    top: 131px;
+    left: 20px;
+}
+
+/* about section */
+
+.about {
+    background: #fff;
+}
+
+.about main {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    color: #6b7f31;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: bold;
+}
+
+.courseDetails {
+    width: 100%;
+    height: 70%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.img2 img {
+    height: 35rem;
+}
+
+.courseDetails ul li {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* whyme section */
+
+.whyme {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.whyme h1 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.highlight {
+    color: #ee5417;
+}
+
+.imgGallery {
+    width: 80%;
+    height: 70vh;
+    margin: 7rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.imgGallery img {
+    height: 20rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+/* countdown section */
+
+.countdown {
+    background: #6b7f31;
+}
+
+.countdown main {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.timer {
+    margin: 5rem 0;
+    display: flex;
+}
+
+.timer div {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem;
+    color: #fff;
+}
+
+.timer div span {
+    color: #fada50;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 3.5rem;
+}
+
+/* cta section */
+
+.cta {
+    background: #6b7f31;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctaChild {
+    width: 80%;
+    height: 70%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background: #3f4f11;
+}
+
+.ctaLeftSide {
+    width: 70%;
+    height: 100%;
+    border-right: 2px solid #fff;
+    color: #fff;
+    padding: 5rem;
+}
+
+.ctaLeftSide h1 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.ctaLeftSide ul li {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.ctaRightSide {
+    width: 30%;
+    color: #fff;
+    padding: 5rem;
+}
+
+.ctaRightSide h1 {
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ctaRightSide #strike {
+    font-size: 2.5rem;
+}
+
+.ctaRightSide p {
+    font-size: 1.5rem;
+}
+
+#btn2 {
+    background: #fada50;
+    width: 50%;
+    height: 52px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6b7f31;
+}
+
+/* msg section*/
+#msg { 
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 5px;
+    background: #d9e5a2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    animation: popup 0.5s ease-in-out 15s forwards;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.icon {
+    font-size: 3rem;
+    transform: rotate(45deg);
+    align-items: flex-end;
+    margin: 1rem;
+    color: #ee5417;
+    position: relative;
+    left: 13rem;
+    top: -1rem;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+#msg h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #3f4f11;
+    text-align: center;
+    position: relative;
+    top: -2rem;
+}
+
+#msg p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: grey;
+    position: relative;
+    top: -2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 2rem;
+}
+
+form input {
+    width: 25rem;
+    height: 3rem;
+    outline: none;
+    border: 2px solid #ee5417;
+    padding: 0 1rem;
+}
+
+form input[type = submit] {
+    background: #ee5417b8;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 72px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .hero,
+    .about,
+    .countdown,
+    .whyme {
+        height: 50vh;
+    }
+
+    .hero .leftChild {
+        width: 50%;
+        height: 100%;
+    }
+
+    .hero h1,
+    .about h1,
+    .countdown h1,
+    .whyme h1 {
+        font-size: 3.5rem;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .hero .rightChild .img {
+        left: -85px;
+    }
+
+    /* about */
+
+    .about main {
+        width: 80%;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .courseDetails ul li {
+        font-size: 1.2rem;
+    }
+
+    .img2 img {
+        height: 25rem;
+    }
+
+    /* countdown */
+
+    .timer {
+        margin: 0;
+    }
+
+    /* whyme */
+
+    .imgGallery img {
+        height: 10rem;
+    }
+
+    /* cta */
+
+    .cta {
+        height: 30vw;
+    }
+
+    .ctaLeftSide {
+        padding: 1rem 4rem;
+    }
+
+    .ctaLeftSide h1,
+    .ctaRightSide h1 {
+        font-size: 2rem;
+    }
+
+    .ctaLeftSide ul li {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .ctaRightSide p {
+        font-size: 1.2rem;
+    }
+
+    #btn2 {
+        width: 80%;
+        height: 30px;
+        font-size: 1.1rem;
+        border-radius: 0;
+    }
+
+    footer {
+        height: 72px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    nav{
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    nav span a {
+        font-size: 1.5rem;
+    }
+
+    .hero,
+    .about,
+    .countdown,
+    .whyme {
+        height: 100%;
+    }
+
+    .hero .rightChild {
+        display: none;
+    }
+
+    .hero .leftChild {
+        width: 100%;
+        padding: 3rem 3rem;
+        padding-top: 10rem;
+    }
+
+    .hero h1,
+    .about h1,
+    .countdown h1,
+    .whyme h1 {
+        font-size: 2.4rem;
+        line-height: 1;
+    }
+
+    /* about */
+
+    .about p {
+        text-align: center;
+    }
+
+    .courseDetails {
+        flex-direction: column;
+    }
+
+    .courseDetails img {
+        margin-top: 3rem;
+    }
+
+    /* countdown */
+
+    .countdown main {
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+    }
+
+    /* whyme */
+
+    .whyme h1 {
+        text-align: center;
+    }
+
+    .imgGallery {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    /* cta */
+
+    .ctaLeftSide,
+    .ctaRightSide {
+        padding: 1rem 2rem;
+    }
+
+    .ctaLeftSide h1,
+    .ctaRightSide h1 {
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ctaLeftSide ul li {
+        font-size: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .ctaRightSide p {
+        font-size: 0.5rem;
+    }
+
+    .ctaRightSide #strike {
+        font-size: 0.5rem;
+    }
+
+    #btn2 {
+        font-size: 0.5rem;
+        height: 15px;
+        width: 43px;
+        padding: 0 5px;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+}
