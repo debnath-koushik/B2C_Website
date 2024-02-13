@@ -555,6 +555,7 @@ footer p {
     .whyme h1 {
         font-size: 2.4rem;
         line-height: 1;
+        text-align: justify; 
     }
 
     /* about */
