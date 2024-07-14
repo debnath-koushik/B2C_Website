@@ -1,0 +1,257 @@
+@media only screen and (max-width: 850px) {
+
+    /*nav section*/
+
+    nav {
+        padding: 0 5rem;
+    }
+
+    .hero,
+    .about,
+    .countdown,
+    .whyme {
+        height: 50vh;
+    }
+
+    .hero .leftChild {
+        width: 50%;
+        height: 100%;
+    }
+
+    .hero h1,
+    .about h1,
+    .countdown h1,
+    .whyme h1 {
+        font-size: 3.5rem;
+    }
+
+    .box {
+        margin: 1rem 0;
+    }
+
+    .hero .rightChild .img {
+        left: -85px;
+    }
+
+    /* about */
+
+    .about main {
+        width: 80%;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .courseDetails ul li {
+        font-size: 1.2rem;
+    }
+
+    .img2 img {
+        height: 25rem;
+    }
+
+    /* countdown */
+
+    .timer {
+        margin: 0;
+    }
+
+    /* whyme */
+
+    .imgGallery img {
+        height: 10rem;
+    }
+
+    /* cta */
+
+    .cta {
+        height: 30vw;
+    }
+
+    .ctaLeftSide {
+        padding: 1rem 4rem;
+    }
+
+    .ctaLeftSide h1,
+    .ctaRightSide h1 {
+        font-size: 2rem;
+    }
+
+    .ctaLeftSide ul li {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    .ctaRightSide p {
+        font-size: 1.2rem;
+    }
+
+    #btn2 {
+        width: 80%;
+        height: 30px;
+        font-size: 1.1rem;
+        border-radius: 0;
+    }
+
+    footer {
+        height: 72px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    nav {
+        font-size: 1rem;
+    }
+
+    nav .leftChild {
+        font-size: 1.7rem;
+    }
+
+    nav .leftChild h2 {
+        top: -2px;
+    }
+
+    nav .leftChild h4 {
+        top: 2px;
+    }
+
+    nav label {
+        display: block;
+    }
+
+    nav .rightChild {
+        position: fixed;
+        background: #fada50;
+        top: 73px;
+        right: -100%;
+        width: 70vw;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 0.2s ease;
+    }
+
+    nav .rightChild span {
+        position: relative;
+    }
+
+    nav input:checked~.rightChild {
+        right: 0%;
+    }
+
+    /* all section */
+
+    .hero,
+    .about,
+    .countdown,
+    .whyme {
+        height: 100%;
+    }
+
+    .hero .rightChild {
+        display: none;
+    }
+
+    .hero .leftChild {
+        width: 100%;
+        padding: 3rem 3rem;
+        padding-top: 10rem;
+    }
+
+    .hero h1,
+    .about h1,
+    .countdown h1,
+    .whyme h1 {
+        font-size: 2rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .hero p {
+        text-align: center;
+    }
+
+    /* about */
+
+    .about p {
+        text-align: center;
+    }
+
+    .courseDetails {
+        flex-direction: column;
+    }
+
+    .courseDetails img {
+        margin-top: 3rem;
+    }
+
+    /* countdown */
+
+    .countdown main {
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+    }
+
+    /* whyme */
+
+    .whyme h1 {
+        text-align: center;
+    }
+
+    .imgGallery {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .imgGallery img {
+        height: 17rem;
+    }
+
+    /* cta */
+
+    .cta {
+        height: 50vw;
+    }
+
+    .ctaLeftSide,
+    .ctaRightSide {
+        padding: 4rem 2rem;
+    }
+
+    .ctaLeftSide h1,
+    .ctaRightSide h1 {
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ctaLeftSide ul li {
+        font-size: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    .ctaRightSide p {
+        font-size: 0.5rem;
+    }
+
+    .ctaRightSide #strike {
+        font-size: 0.5rem;
+    }
+
+    #btn2 {
+        font-size: 0.5rem;
+        height: 15px;
+        width: 43px;
+        padding: 0 5px;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+}

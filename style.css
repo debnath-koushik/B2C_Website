@@ -11,25 +11,54 @@ html {
     scroll-padding: 5rem;
 }
 
+/* nav section */
+
 nav {
     min-width: 100%;
     height: 72px;
     background: #fada50;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 5rem;
+    padding: 0 15rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-nav a {
+nav .leftChild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6b7f31;
+    font-size: 2rem;
+}
+
+nav .leftChild h4 {
+    color: grey;
+    position: relative;
+    top: 5px;
+}
+
+nav .leftChild h2 {
+    position: relative;
+    top: -5px;
+}
+
+nav .rightChild a {
     text-decoration: none;
     font-size: 2rem;
     padding: 0 12px;
     font-weight: bold;
     color: #6b7f31;
+}
+
+nav input,
+nav label {
+    font-size: 2rem;
+    color: #6b7f31;
+    display: none;
 }
 
 /* hero section */
@@ -331,7 +360,7 @@ nav a {
 }
 
 /* msg section*/
-#msg { 
+#msg {
     position: fixed;
     left: 2rem;
     bottom: 2rem;
@@ -370,7 +399,7 @@ nav a {
     top: -1rem;
 }
 
-.icon:hover{
+.icon:hover {
     cursor: pointer;
 }
 
@@ -406,7 +435,7 @@ form input {
     padding: 0 1rem;
 }
 
-form input[type = submit] {
+form input[type=submit] {
     background: #ee5417b8;
     color: white;
     font-weight: bold;
@@ -424,209 +453,4 @@ footer {
 footer p {
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-@media only screen and (max-width: 850px) {
-
-    .hero,
-    .about,
-    .countdown,
-    .whyme {
-        height: 50vh;
-    }
-
-    .hero .leftChild {
-        width: 50%;
-        height: 100%;
-    }
-
-    .hero h1,
-    .about h1,
-    .countdown h1,
-    .whyme h1 {
-        font-size: 3.5rem;
-    }
-
-    .box {
-        margin: 1rem 0;
-    }
-
-    .hero .rightChild .img {
-        left: -85px;
-    }
-
-    /* about */
-
-    .about main {
-        width: 80%;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
-
-    .courseDetails ul li {
-        font-size: 1.2rem;
-    }
-
-    .img2 img {
-        height: 25rem;
-    }
-
-    /* countdown */
-
-    .timer {
-        margin: 0;
-    }
-
-    /* whyme */
-
-    .imgGallery img {
-        height: 10rem;
-    }
-
-    /* cta */
-
-    .cta {
-        height: 30vw;
-    }
-
-    .ctaLeftSide {
-        padding: 1rem 4rem;
-    }
-
-    .ctaLeftSide h1,
-    .ctaRightSide h1 {
-        font-size: 2rem;
-    }
-
-    .ctaLeftSide ul li {
-        font-size: 1.2rem;
-        margin: 1rem;
-    }
-
-    .ctaRightSide p {
-        font-size: 1.2rem;
-    }
-
-    #btn2 {
-        width: 80%;
-        height: 30px;
-        font-size: 1.1rem;
-        border-radius: 0;
-    }
-
-    footer {
-        height: 72px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-
-    nav{
-        justify-content: center;
-        padding-left: 0;
-    }
-
-    nav span a {
-        font-size: 1.5rem;
-    }
-
-    .hero,
-    .about,
-    .countdown,
-    .whyme {
-        height: 100%;
-    }
-
-    .hero .rightChild {
-        display: none;
-    }
-
-    .hero .leftChild {
-        width: 100%;
-        padding: 3rem 3rem;
-        padding-top: 10rem;
-    }
-
-    .hero h1,
-    .about h1,
-    .countdown h1,
-    .whyme h1 {
-        font-size: 2.4rem;
-        line-height: 1;
-        text-align: justify; 
-    }
-
-    /* about */
-
-    .about p {
-        text-align: center;
-    }
-
-    .courseDetails {
-        flex-direction: column;
-    }
-
-    .courseDetails img {
-        margin-top: 3rem;
-    }
-
-    /* countdown */
-
-    .countdown main {
-        width: 100%;
-        height: 100%;
-        padding: 3rem;
-    }
-
-    /* whyme */
-
-    .whyme h1 {
-        text-align: center;
-    }
-
-    .imgGallery {
-        height: 100%;
-        margin-bottom: 0;
-    }
-
-    /* cta */
-
-    .ctaLeftSide,
-    .ctaRightSide {
-        padding: 1rem 2rem;
-    }
-
-    .ctaLeftSide h1,
-    .ctaRightSide h1 {
-        font-size: 0.9rem;
-        line-height: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .ctaLeftSide ul li {
-        font-size: 0.5rem;
-        margin: 0.5rem;
-    }
-
-    .ctaRightSide p {
-        font-size: 0.5rem;
-    }
-
-    .ctaRightSide #strike {
-        font-size: 0.5rem;
-    }
-
-    #btn2 {
-        font-size: 0.5rem;
-        height: 15px;
-        width: 43px;
-        padding: 0 5px;
-    }
-
-    footer {
-        height: 50px;
-    }
-
 }
